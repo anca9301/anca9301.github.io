@@ -1,9 +1,15 @@
 /* general styles */
 section {
-    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-p {
-    margin: 2px;
+body {
+    padding: 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p, ul, li {
+    padding: 0;
+    margin: 2px;
 }

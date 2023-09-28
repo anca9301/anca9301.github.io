@@ -1,0 +1,9 @@
+/* general styles */
+section {
+    padding: 1%;
+}
+
+p {
+    margin: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

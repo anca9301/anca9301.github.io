@@ -2,6 +2,8 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
     /* border: 1px solid black; */
 }
 
@@ -45,7 +47,7 @@ p {
     font-weight: bolder;
     font-size: x-large;
 
-    width: 16rem;
+    width: 18%;
     height: 3rem;
     line-height: 0rem;
     padding: 0rem .5rem 0rem .5rem;
@@ -61,14 +63,14 @@ p {
     font-weight: bolder;
     font-size:x-large;
 
-    width: 75%;
+    width: 74%;
     height: 3rem;
     line-height: 0rem;
     padding: 0rem .5rem 0rem 2rem;
 
     position: absolute;
     bottom: 8rem;
-    left: 18rem;
+    left: 21%;
 }
 
 #newsStory {
@@ -77,14 +79,16 @@ p {
     font-weight: bold;
     font-size: large;
 
-    width: 95.7%;
+    width: 94%;
     /* height: 2rem; */
     line-height: 0rem;
-    padding: 0rem .5rem 0rem .5rem;
+    padding: 0rem .5rem 0rem 1rem;
 
     position: absolute;
     bottom: 6rem;
     left: 2%;
+
+    border: 1px solid green;
 }
 
 /* #newStory p {
@@ -93,7 +97,7 @@ p {
 
 #newsBottom {
     background-color: red;
-    width: 96.7%;
+    width: 95.5%;
     height: .5rem;
     position: absolute;
     bottom: 5.5rem;

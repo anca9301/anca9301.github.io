@@ -47,14 +47,6 @@ p {
     left: 1rem;
 }
 
-.logo {
-    background-image: url("/img/manOnComputer.jpg");
-    /* background-size: 5%; */
-    position: relative;
-    top: 2rem;
-    right: 1rem;
-}
-
 #info {
     font-size: x-large;
     font-weight: bolder;

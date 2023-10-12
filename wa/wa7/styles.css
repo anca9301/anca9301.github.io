@@ -28,6 +28,7 @@ body {
     padding: .5em;
     position: sticky;
     top: 0%;
+    text-align: center;
   }
   
   nav ul {
@@ -36,18 +37,17 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
+    max-width: 100%;
   }
 
   nav ul li {
     flex: 1;
-    text-align: center;
   }
-  
+
   nav a {
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
-    /* flex: 1; */
   }
   
   .photos {
@@ -60,13 +60,9 @@ body {
       width: 200px;
   }
 
-  .grid article {
-    padding: 10px;
-  }
-
   article img {
     float: left;
-    padding: 10px;
+    padding: 15px;
   }
 
   .photos {
@@ -75,15 +71,15 @@ body {
     grid-template-columns: auto auto;
   }
 
-
   @media only screen and (min-width: 500px) {
     .grid {
       display: flex;
       flex-direction: row;
     }
-
+    
     .grid article{
       flex: 2;
+      padding: 15px;
     }
 
     .grid aside{

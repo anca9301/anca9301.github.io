@@ -60,8 +60,19 @@ body {
       width: 200px;
   }
 
+  .grid article {
+    padding: 10px;
+  }
+
   article img {
     float: left;
+    padding: 10px;
+  }
+
+  .photos {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: auto auto;
   }
 
 
@@ -69,6 +80,14 @@ body {
     .grid {
       display: flex;
       flex-direction: row;
+    }
+
+    .grid article{
+      flex: 2;
+    }
+
+    .grid aside{
+      flex: 1;
     }
   }
 

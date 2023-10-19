@@ -2,35 +2,128 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blanchedalmond;
+    background-color: rgb(227, 230, 251);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top:3%;
 }
+
 nav{
-    height: 50vh;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    height:20px;
-    background-color: blueviolet;
+    height:50px;
+    width: 90%;
+    background-color: rgb(141, 180, 206);
+    border-radius: 10px;
+    margin-bottom: .5%;
 }
 nav a{
     width:10vw;
+    font-size: large;
+    font-weight:bolder ;
+    line-height: 100%;
     text-align: center;
     text-decoration: none;
     color:black;
+    margin: 10px;
+    padding: 5px;
+}
+nav a:hover {
+    background-color: navy;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+h1:hover {
+    background-color: navy;
+    color: whitesmoke;
+    border-radius: 10px;
+    width:20vw;
+    text-align: center;
 }
 
-
-img{
+#instrument {
     width:30vw;
     height: 30vh;
+    object-fit: contain;
 }
 
-#red-ball{
-    background-color: crimson;
+#instrument img{
+    width:30vw;
+    height: 40vh;
+    /* top: 400px; */
+    position: relative;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+/* img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+img:hover {
+    background-image: url(/img/wa8/guitar.jpg);
+} */
+
+
+#loadBar {
+    background-color: black;
     width: 20px;
     height:20px;
-    border-radius: 50%;
+    border-radius: 20px;
     position: absolute;
     left:5vw;
-    top:0;
+    top:75%;
+
+    animation-duration: 20s;
+    animation-name: stretch;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes stretch{
+    from {
+        left:5vw;
+        right:auto;
+        width:20px;
+        background-color: black;
+    }
+    25% {
+        left:5vw;
+        right:auto;
+        width:90%;
+        background-color: cornflowerblue;
+    }
+    26% {
+        left:auto;
+        right: 5vw;
+        width:90%;
+        background-color: cornflowerblue;
+    }
+    50% {
+        left:auto;
+        right: 5vw;
+        width: 20px;
+        background-color: seagreen;
+    }
+    75% {
+        left:auto;
+        right:5vw;
+        width:90%;
+        background-color: cornflowerblue;
+    }
+    76% {
+        left:5vw;
+        right:auto;
+        width:90%;
+        background-color: cornflowerblue;
+    }
+    to {
+        left:5vw;
+        right:auto;
+        width:20px;
+    }
 }

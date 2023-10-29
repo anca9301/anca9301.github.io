@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+}
+
+/* Headers */
+h1 {
+    text-align: center;
+    border: 1px solid purple;
+}
+h2 {
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+}
+h4 {
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+    border: 1px solid lime;
+}
+
+/* Other Text */
+.intro {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+p {
+    margin: 0;
+    border: 1px solid red;
+}
+ul {
+    margin: 0;
+    border: 1px solid blue;
+}
+
+.program {
+    padding: 5%;
+}
+
+/* Screen Sizes */
+@media screen and (max-width: 400px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .program_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .program_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

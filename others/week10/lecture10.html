@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture10</title>
+    <style>
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Player 1 : Chris</button>
+
+    <script>
+        const button = document.querySelector("button");
+
+        button.addEventListener('click', updateName);
+
+        function updateName() {
+            let name = prompt("Enter a new name");
+            button.textContent = `Player 1: ${name}`;
+        }
+    </script>
+</body>
+</html>

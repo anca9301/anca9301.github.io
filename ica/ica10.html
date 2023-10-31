@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements</title>
+    <style>
+        button {
+            background-color: white;
+            color: black;
+            width: 20rem;
+            height: 2rem;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="event1">Event 1: this will change the text</button>
+    <button type="button" id="event2">Event 2: this will change the text color</button>
+
+    <script>
+        const event1 = document.querySelector("#event1");
+        const event2 = document.querySelector("#event2")
+        event1.addEventListener('click', updateName);
+        event2.addEventListener('click', updateTextColor);
+        window.addEventListener("resize", changeBackgroundColor);
+
+
+        function updateName() {
+            let name = prompt("Enter a new name");
+            event1.textContent = `Event 1: ${name}`;
+        }
+        function updateTextColor() {
+            let randColor = Math.floor(Math.random()*16777215).toString(16);
+            event2.style.color = '#' + randColor;
+        }
+        function changeBackgroundColor(){
+            let randEvent = Math.floor(Math.random() * 25) + 1;
+            if (randEvent == 1) {
+                let randColor = Math.floor(Math.random()*16777215).toString(16);
+                document.querySelector('body').style.backgroundColor = '#' + randColor;
+            }
+        }
+
+    </script>
+</body>
+</html>

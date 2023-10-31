@@ -5,40 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Elements</title>
     <style>
+        body {
+            font-weight: bolder;
+            font-family: Helvetica;
+            width: auto;
+            height: auto;
+        }
         button {
             background-color: white;
             color: black;
             width: 20rem;
             height: 2rem;
-            font-weight: bolder;
+        }
+        p {
+            width: fit-content;
+            height: fit-content;
         }
     </style>
 </head>
 <body>
     <button type="button" id="event1">Event 1: this will change the text</button>
     <button type="button" id="event2">Event 2: this will change the text color</button>
+    <p id="text1">Chase the Text</p>
 
     <script>
+        //const
         const event1 = document.querySelector("#event1");
-        const event2 = document.querySelector("#event2")
+        const event2 = document.querySelector("#event2");
+        const text1 = document.querySelector("#text1");
+        const docBody = document.querySelector('body');
+
+
+        //event listeners
         event1.addEventListener('click', updateName);
         event2.addEventListener('click', updateTextColor);
-        window.addEventListener("resize", changeBackgroundColor);
+        text1.addEventListener('mouseover', updatePosition);
+        window.addEventListener("resize", updateBackgroundColor);
 
 
+        // functions
+        //update text in event1
         function updateName() {
             let name = prompt("Enter a new name");
             event1.textContent = `Event 1: ${name}`;
         }
+
+        //update text color of event2
         function updateTextColor() {
             let randColor = Math.floor(Math.random()*16777215).toString(16);
             event2.style.color = '#' + randColor;
         }
-        function changeBackgroundColor(){
+
+        //update position of text1
+        function updatePosition() {
+            let w = (Math.floor(Math.random() * 80) + 1).toString() + '%';
+            let h = (Math.floor(Math.random() * 50) + 1).toString() + '%';
+            text1.style.marginLeft = w;
+            text1.style.marginTop = h;
+        }
+
+        //update background color of body
+        function updateBackgroundColor(){
             let randEvent = Math.floor(Math.random() * 25) + 1;
             if (randEvent == 1) {
                 let randColor = Math.floor(Math.random()*16777215).toString(16);
-                document.querySelector('body').style.backgroundColor = '#' + randColor;
+                docBody.style.backgroundColor = '#' + randColor;
             }
         }
 

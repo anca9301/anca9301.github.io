@@ -4,11 +4,6 @@ body {
   margin: auto;
 }
 
-label {
-  font-weight: bold;
-  font-size: medium;
-}
-
 div {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -18,9 +13,14 @@ div {
 }
 
 #surround {
-  border: 3px black dotted;
-  background-color: rgb(206, 232, 255);
-}
+    border: 3px black dotted;
+    background-color: rgb(206, 232, 255);
+  }
+
+label {
+    font-weight: bold;
+    font-size: medium;
+  }
 
 input[type="text"] {
   padding: 7px;

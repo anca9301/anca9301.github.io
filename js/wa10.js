@@ -9,10 +9,11 @@ function randomValueFromArray(array){
 }
 
 // RAW TEXT STRINGS
-var storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
-var insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
-var insertY = ["the soup kitchen", "Disneyland", "the White House"];
-var insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
+var storyText = "It was 134 farenheit outside, hot enough to :insertx: outside. :inserty: had the great idea to go for a walk :insertz:. As he walked past the bell tower, he noticed :inserta:. The bell fell to the ground, and :insertx: started melting. Jill saw everything. She was not suprised that 400 pound bell fell, but was suprised that :insertx: the snowman did not melt earlier.";
+var insertX = ["cook an egg", "sear a steak", "prepare a Thanksgiving feast", "bake a wedding cake"];
+var insertY = ["Abominable", "Frosty", "Santa Claus", "Olaf", "Bumble", "Marshmallow"];
+var insertZ = ["around town", "to the North Pole", "across the Atlantic", "to the South Pole", "around the world", "to church"];
+var insertA = ["cars melting from the heat", "time melting", "icicles crashing onto the streets", "water evaporating from the pool"]
 
 // EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 randomize.addEventListener('click', result);
@@ -21,9 +22,10 @@ function result() {
     var xItem = randomValueFromArray(insertX);
     var yItem = randomValueFromArray(insertY);
     var zItem = randomValueFromArray(insertZ);
-    var cName = "Bob";
-    var weight = "300 pounds";
-    var temp = "94 fahrenheit";
+    var aItem = randomValueFromArray(insertA);
+    var cName = "Jill";
+    var weight = "400 pounds";
+    var temp = "134 fahrenheit";
 
   if(customName.value !== '') {
     cName = customName.value;
@@ -35,7 +37,9 @@ function result() {
 
   }
 
-  newStory = `It was ${temp} outside, so ${xItem} went for a walk. When they got to ${yItem}, they stared in horror for a few moments, then ${zItem}. ${cName} saw the whole thing, but was not surprised — ${xItem} weighs ${weight}, and it was a hot day.`;
+  newStory = `It was ${temp} outside, hot enough to ${xItem} outside. ${yItem} had the great idea to go for a walk ${zItem}. 
+  As he walked past the bell tower, he noticed ${aItem}. The bell fell to the ground, and ${yItem} started melting. ${cName} saw everything. 
+  She was not suprised that ${weight} bell fell, but was suprised that ${yItem} the snowman did not melt earlier.`;
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }

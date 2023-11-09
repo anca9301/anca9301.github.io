@@ -1,6 +1,7 @@
-h1 {
+h1, h4 {
   text-align: center;
 }
+
 
 body {
   width: 640px;
@@ -8,7 +9,9 @@ body {
   padding: 0;
   font-family: helvetica, arial, sans-serif;
   background-color: aliceblue;
+
 }
+
 
 .full-img {
   position: relative;
@@ -52,11 +55,12 @@ button {
 .credits {
   width: 100%;
   bottom: 0%;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   position: absolute;
   text-align: center;
 
-  background-color: rgba(240, 248, 255, 0.5);
+  background-color: rgba(240, 248, 255, 0.6);
   color: black;
 }
 

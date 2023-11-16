@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/wa12.css">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/css/wa12.css" >
     <script defer src="/js/wa12.js"></script>
     <title>Quote Machine</title>
-</head>
-<body>
-        <header>Random Quotes</header>
-        <div class="background" id="js-quote-background">
-          <img class="background" id="js-displayed-img" src="/img/wa12/Cave-MarkO.jpg" alt="Photo by Mark Olsen on Unsplash: ice cave">
-        <section class="quotes">
-          <div class="quote-text" id="js-quote-text"></div>
-          <div class="quote-author" id="js-quote-author"></div>
-        </section>
-      </div>
+  </head>
+  <body>
+    <header>Random Quotes</header>
 
-        <section class="controls" >
-          <button type="button" id="js-new-quote" class="new-quote button">
-            I want another quote!
-          </button>
-          <button type="button" id="js-new-background" class="new-background button">
-            I want another background!
-          </button>
-        </section>
-</body>
+    <div class="controls">
+      <button type="button" id="js-new-quote" class="new-quote button">
+        I want another quote!
+      </button>
+      <button
+        type="button"
+        id="js-new-background"
+        class="new-background button">
+        I want another background!
+      </button>
+    </div>
+
+    <div class="background" id="js-quote-background">
+      <img
+        class="background"
+        id="js-displayed-img"
+        src="/img/wa12/Cave-MarkO.jpg"
+        alt="Photo by Mark Olsen on Unsplash: ice cave"
+      >
+      <div class="quotes">
+        <div class="quote-text" id="js-quote-text"></div>
+        <div class="quote-author" id="js-quote-author"></div>
+      </div>
+    </div>
+
+    
+    <div class="background">
+      <p>
+        My extension is a random background button. I reformatted the original quote generator by seperating the heading, buttons, and quote. Then, I placed the quote in the center of background image. Afterward, I added a random background button and provided it ten different backgrounds. When you press the random background button, the generator sets a random background as the background of the quote. 
+      </p>
+    </div>
+  </body>
 </html>

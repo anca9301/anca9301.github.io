@@ -85,6 +85,7 @@ function randAd() {
 numSub.addEventListener('click', subtract);
 numAdd.addEventListener('click', add);
 numSubmit.addEventListener('mouseover', changeSubmitLocation);
+numSubmit.addEventListener('click', (e) => {alert("Thank You for Submitting Your Phone Number!");})
 exit1.addEventListener('click', (e) => { ad1.style.display = "none"; changeTransparent();})
 exit2.addEventListener('click', (e) => { ad2.style.display = "none"; changeTransparent();})
 exit3.addEventListener('click', (e) => { ad3.style.display = "none"; changeTransparent();})

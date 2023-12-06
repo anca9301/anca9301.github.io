@@ -1,5 +1,5 @@
-"ads" poping up and blocking screen :: 1/5 chance when phone number changes
-submit button runs away when you hover over it
-either randomize the whole number or individually add to you phone number also changes location when you click
-add by some amount between 1-100 :: same with subtracting
-the colors are slowly fading away as you click 1/5 chance
+++ "ads" poping up and blocking screen :: 1/5 chance when phone number changes
+++ submit button runs away when you hover over it
+++ either randomize the whole number or individually add to you phone number also changes location when you click
+++ add by some amount between 1-100 :: same with subtracting
+++ the colors are slowly fading away as you click 1/5 chance

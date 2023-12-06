@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.popup {
+    position: absolute;
+    border: 1px solid black;
+    display: none;
+}
+.exit {
+    height: fit-content;
+    width: 2rem;
+    background-color: red;
+    color: white;
+    float: right;
+}
+#ad1 {
+    left: 2rem;
+    top: 2rem;
+    width: 50rem;
+    height: 30rem;
+    background-color: rosybrown;
+}
+#ad2 {
+    left: 40rem;
+    top: 14rem;
+    width: 25rem;
+    height: 20rem;
+    background-color: orchid;
+}
+#ad3 {
+    left: 55rem;
+    top: 8rem;
+    width: 35rem;
+    height: 25rem;
+    background-color: darkgoldenrod;
+}
+#ad4 {
+    left: 53rem;
+    top: 4rem;
+    width: 10rem;
+    height: 20rem;
+    background-color: limegreen;
+}
+#ad5 {
+    left: 19rem;
+    top: 10rem;
+    width: 16rem;
+    height: 24rem;
+    background-color: cornflowerblue;
+}
+#ad6 {
+    left: 25rem;
+    top: 6rem;
+    width: 25rem;
+    height: 20rem;
+    background-color: orchid;
+}
+#ad7 {
+    left: 8rem;
+    top: 18rem;
+    width: 35rem;
+    height: 25rem;
+    background-color: darkgoldenrod;
+}
+#ad8 {
+    left: 5rem;
+    top: 16rem;
+    width: 16rem;
+    height: 24rem;
+    background-color: cornflowerblue;
+}
+#ad9 {
+    left: 64rem;
+    top: 21rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: cyan;
+}
+#ad10 {
+    left: 70rem;
+    top: 2rem;
+    width: 23rem;
+    height: 37rem;
+    background-color: violet;
+}
+#ad0 {
+    left: 33rem;
+    top: 19rem;
+    width: 47rem;
+    height: 17rem;
+    background-color: seagreen;
+}

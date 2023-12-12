@@ -155,3 +155,89 @@ h2 {
     color: aliceblue;
     font-weight: bolder;
 }
+
+#ad11 {
+    left: 22rem;
+    top: 13rem;
+    width: 50rem;
+    height: 26rem;
+    background-color: rosybrown;
+    background-image: url("ads/elmoFire.jfif");
+}
+#ad12 {
+    left: 20rem;
+    top: 6rem;
+    width: 25rem;
+    height: 18rem;
+    background-color: orchid;
+    background-image: url("/img/rulyrana.jpg");
+}
+#ad13 {
+    left: 33rem;
+    top: 16rem;
+    width: 50rem;
+    height: 26rem;
+    background-color: rosybrown;
+    background-image: url("ads/elmoFire.jfif");
+}
+#ad14 {
+    left: 23rem;
+    top: 14rem;
+    width: 10rem;
+    height: 20rem;
+    background-color: limegreen;
+    background-image: url("/img/wa11/Owl-AndyC.jpg");
+
+}
+#ad15 {
+    left: 39rem;
+    top: 14rem;
+    width: 16rem;
+    height: 21rem;
+    background-color: cornflowerblue;
+    background-image: url("../img/wa11/Cheesecake-MinkM.jpg");
+}
+#ad16 {
+    left: 27rem;
+    top: 9rem;
+    width: 47rem;
+    height: 15rem;
+    background-color: black;
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+#ad17 {
+    left: 19rem;
+    top: 7rem;
+    width: 35rem;
+    height: 22rem;
+    background-color: darkgoldenrod;
+    background-image: url("/img/wa6/houseCrash.jpg");
+}
+#ad18 {
+    left: 52rem;
+    top: 17rem;
+    width: 23rem;
+    height: 23rem;
+    background-color: violet;
+    background-image: url("ads/alpaca.jpg");
+}
+#ad19 {
+    left: 24rem;
+    top: 14rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: cyan;
+    background-image: url("ads/2birds.jpg");
+}
+#ad20 {
+    left: 14rem;
+    top: 4rem;
+    width: 47rem;
+    height: 15rem;
+    background-color: black;
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: bolder;
+}

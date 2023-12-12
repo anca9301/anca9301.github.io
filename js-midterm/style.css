@@ -101,8 +101,9 @@ h2 {
     left: 19rem;
     top: 10rem;
     width: 16rem;
-    height: 24rem;
+    height: 21rem;
     background-color: cornflowerblue;
+    background-image: url("../img/wa11/Cheesecake-MinkM.jpg");
 }
 #ad6 {
     left: 25rem;
@@ -124,8 +125,9 @@ h2 {
     left: 5rem;
     top: 16rem;
     width: 16rem;
-    height: 24rem;
+    height: 21rem;
     background-color: cornflowerblue;
+    background-image: url("../img/wa11/Cheesecake-MinkM.jpg");
 }
 #ad9 {
     left: 64rem;
@@ -139,13 +141,17 @@ h2 {
     left: 70rem;
     top: 2rem;
     width: 23rem;
-    height: 37rem;
+    height: 23rem;
     background-color: violet;
+    background-image: url("ads/alpaca.jpg");
 }
 #ad0 {
-    left: 33rem;
-    top: 19rem;
+    left: 31rem;
+    top: 14rem;
     width: 47rem;
-    height: 17rem;
-    background-color: seagreen;
+    height: 15rem;
+    background-color: black;
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: bolder;
 }

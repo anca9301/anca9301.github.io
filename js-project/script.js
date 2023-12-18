@@ -70,8 +70,8 @@ function add() {
 }
 
 function changeSubmitLocation() {
-  let w = random(35).toString() + 'rem';
-  let h = (random(15)+ 2).toString() + 'rem';
+  let w = random(55).toString() + '%';
+  let h = (random(25)+ 2).toString() + '%';
   mainDisplay.style.textAlign = 'left';
   numSubmit.style.marginLeft = w;
   numSubmit.style.marginTop = h;

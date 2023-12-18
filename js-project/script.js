@@ -3,6 +3,7 @@ const numSub = document.querySelector("#subtract");
 const numAdd = document.querySelector("#add");
 const numSubmit = document.querySelector("#submit");
 const numChange = document.querySelector("#changeNumberDiv");
+const mainDisplay = document.querySelector('#mainDisplay');
 
 const ad1 = document.querySelector("#ad1"); const exit1 = document.querySelector("#x1");
 const ad2 = document.querySelector("#ad2"); const exit2 = document.querySelector("#x2");
@@ -69,8 +70,9 @@ function add() {
 }
 
 function changeSubmitLocation() {
-  let w = random(80).toString() + '%';
-  let h = random(25).toString() + '%';
+  let w = random(35).toString() + 'rem';
+  let h = (random(15)+ 2).toString() + 'rem';
+  mainDisplay.style.textAlign = 'left';
   numSubmit.style.marginLeft = w;
   numSubmit.style.marginTop = h;
 }
@@ -85,6 +87,7 @@ function changeDivLocation() {
 function randAd() {
   let c = random(3);
   let j = random(4);
+  let k = random(5);
   if (c == 1) {
     let r = random(21);
     let a = 'ad' + r.toString();
@@ -92,6 +95,12 @@ function randAd() {
     x.style.display = "block";
   }
   if (j == 3) {
+    let r = random(21);
+    let a = 'ad' + r.toString();
+    let x = document.getElementById(a);
+    x.style.display = "block";
+  }
+  if (k == 3) {
     let r = random(21);
     let a = 'ad' + r.toString();
     let x = document.getElementById(a);

@@ -1,0 +1,20 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* homepage style */
+  
+  #editPhrase {
+    display: none;
+  }
+  
+  /* journal page style */
+  
+  #addEntryForm {
+    display: none;
+  }
+  
+  #editEntryForm {
+    display: none;
+  }
